@@ -1,10 +1,10 @@
 # Particle Jekyll Theme
 
 This project is forked from nrandecker/particle and is used as template for my portfolio.
-
-![](./particle.jpg)
-
 This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
+
+#![](./particle.jpg)
+![](./welcome_page.jpg)
 
 The Theme features:
 
@@ -61,16 +61,8 @@ In order to compile the assets and run Jekyll on local you need to follow those 
 - Run `npm install`
 - Run `gulp`
 
-## Questions
-
-Having any issues file a [GitHub Issue](https://github.com/nrandecker/particle/issues/new).
-
-## License
-
-This theme is free and open source software, distributed under the The MIT License. So feel free to use this Jekyll theme anyway you want.
-
 ## Credits
 
-This theme was partially designed with the inspiration from these fine folks
-- [Willian Justen](https://github.com/willianjusten/will-jekyll-template)
-- [Vincent Garreau](https://github.com/VincentGarreau/particles.js/)
+This theme is developed by 
+- [Nathan Randecker](https://github.com/nrandecker/particle)
+
