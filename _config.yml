@@ -1,16 +1,16 @@
 # Site settings
-title: A blog about lorem ipsum dolor sit amet
+title: Arjun's Portfolio
 description: A blog about lorem ipsum dolor sit amet
 # baseurl: "/particle" # the subpath of your site, e.g. /blog
 # url: "localhost:3000" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: Anon Developer
-user_description: Bicycle rights irony actually neutra typewriter lyft. Man bun taxidermy put a bird on it, umami yr ramps pop-up ugh bushwick chia lo-fi. Occupy bitters pour-over snackwave you probably haven't heard of them small batch. Cornhole mustache man bun letterpress echo park VHS.
-user_title: Software Developer
-email: anon@anon.com
+username: Arjun Ankathatti Chandrashekara
+user_description: I am a Full Stack Software Developer with 3 years of experience in Web Application Development. I have hands-on experience in programming with object-oriented language Java and frameworks like Struts2, Hibernate, AngularJS. This has instilled strong programming and analytical skills in me. I have also worked on web scripting, relational database, and frontend GUI development using Bootstrap, HTML5, and CSS.
+user_title: Full Stack Software Developer
+email: aacwb@mail.missouri.edu
 twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
+github_username:  acarjungowda
 gplus_username:  lorem_ipsum
 
 # Google-analytics
