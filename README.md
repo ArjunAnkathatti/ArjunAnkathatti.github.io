@@ -1,5 +1,7 @@
 # Particle Jekyll Theme
 
+This project is forked from nrandecker/particle and is used as template for my portfolio.
+
 ![](./particle.jpg)
 
 This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
