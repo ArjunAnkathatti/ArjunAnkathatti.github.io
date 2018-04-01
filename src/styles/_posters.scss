@@ -11,7 +11,7 @@
 }
 
 .user-posters {
-  margin: 20px auto;
+  margin: 10px auto;
   img {
     max-width: 100%;
     height: auto;
@@ -29,24 +29,24 @@
   }
 }
 
-.contents {
+.poster-contents {
   @media only screen and (min-width: $cut) {
     margin-left: 0;
-    width: 48%;
+    width: 78%;
   }
 }
 
-.contents-right {
+.poster-contents-right {
   @media only screen and (min-width: $cut) {
     float: right;
     margin-top: -5%;
-    width: 48%;
+    width: 18%;
   }
 }
-.images-right {
+.poster-images-right {
   @media only screen and (min-width: $cut) {
     float: right;
-    width: 48%;
+    width: 18%;
   }
   img {
     @media only screen and (min-width: $cut) {
@@ -55,10 +55,10 @@
   }
 }
 
-.images-left {
+.poster-images-left {
   @media only screen and (min-width: $cut) {
     float: left;
-    width: 48%;
+    width: 18%;
   }
   img {
     @media only screen and (min-width: $cut) {
