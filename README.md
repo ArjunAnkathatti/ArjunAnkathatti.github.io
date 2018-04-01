@@ -3,7 +3,6 @@
 This project is forked from nrandecker/particle and is used as template for my portfolio.
 This is a simple and minimalist template for Jekyll designed for developers that want to show of their portfolio.
 
-#![](./particle.jpg)
 ![](./welcome_page.jpg)
 
 The Theme features:
