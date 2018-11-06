@@ -1,96 +1,105 @@
-<div class="user-details">
-  <h1> Featured Projects </h1>
+<div class="row">
+  <h2> Featured Projects </h2>
 </div>
-<!-- ************************************************************************************ -->
-<div class="user-projects">
-  <div class="images-right">
-    <img alt="mountains" src="{{ "/assets/img/multicloud.png" | prepend: site.baseurl }}" />
-  </div>
-  <div class="contents">
-    <h3> Multi-Cloud Resource Recommender for Scientific Applicaitons</h3>
-    <ul>
-      <li>KNN algorithm for multi-cloud resource recommender for scientific applications.</li>
-      <li>Java Struts 2, HTML, CSS, Jquery</li>
-    </ul>
-    <p>Multi-cloud resource recommender and deployment engine for scientific applications based on users technical as well as cost requirements.</p>
-    <a class="project-link" href="https://github.com/acarjungowda/CustomTemplate_Recommender">Check it out</a>
+<div class="row">
+  <div class="projects">
+    <!-- ************************************************************************************ -->
+    <div class="user-projects js--project-01">
+      <h3 class="js--project-title-01"> Multi-Cloud Resource Recommender for Scientific Applicaitons</h3>
+      <div class="images-right js--image-right-01">
+        <img alt="mountains" src="{{ "/assets/img/multicloud.png" | prepend: site.baseurl }}" />
+      </div>
+      <div class="contents js--content-left-01">
+        <!-- <h3> Multi-Cloud Resource Recommender for Scientific Applicaitons</h3> -->
+        <ul>
+          <li>KNN algorithm for multi-cloud resource recommender for scientific applications.</li>
+          <li>Java Struts 2, HTML, CSS, Jquery</li>
+        </ul>
+        <p>Multi-cloud resource recommender and deployment engine for scientific applications based on users technical as well as cost requirements.</p>
+        <a class="project-link" href="https://github.com/acarjungowda/CustomTemplate_Recommender">Check it out</a>
+      </div>
+    </div>
+    <!-- ************************************************************************************ -->
+    <div class="user-projects js--project-02">
+      <h3 class="js--project-title-02">Javascript emmedable chat widget client for Dialogflow</h3>
+      <div class="images-left js--image-left-02">
+        <img alt="mountains" src="{{ "/assets/img/chat-widget.png" | prepend: site.baseurl }}" />
+      </div>
+      <div class="contents-right js--content-right-02">
+        <!-- <h3>Javascript emmedable chat widget client for Dialogflow</h3> -->
+        <ul>
+          <li>Javascript, JQuery, AJAX</li>
+          <li>Gulp, SASS, Bootstrap</li>
+        </ul>
+        <p>Chat widget UI and Dialogflow integration using javascript and jquery. Javascript can be embeded on any HTML page.</p>
+        <a class="project-link" href="https://github.com/acarjungowda/chat-widget">Check it out</a>
+      </div>
+    </div>
+    <!-- ************************************************************************************ -->
+    <div class="user-projects js--project-03">
+      <h3 class="js--project-title-03"> VIDURA: A virtual assistant powered by Dialogflow on <a href="http://cyneuro.org">CyNeuro</a> portal</h3>
+      <div class="images-right js--image-right-03">
+        <img alt="mountains" src="{{ "/assets/img/chatbot.png" | prepend: site.baseurl }}" />
+      </div>
+      <div class="contents js--content-left-03">
+        <!-- <h3> VIDURA: A virtual assistant powered by Dialogflow on <a href="http://cyneuro.org">CyNeuro</a> portal</h3> -->
+        <ul>
+          <li>PHP Laravel Framework, JQuery and AgularJS</li>
+          <li>Dialogflow</li>
+        </ul>
+        <p>VIDURA, a chabot using Dialogflow to help neuroscience scientist execute workflows on remote HPC systems. Design and maintaining the cyneuro.org portal. REST API end points for generating custom responses using Dialogflow web hooking feature.
+        </p>
+        <!-- <a class="project-link" href="#">Check it out</a> -->
+      </div>
+    </div>
+    <!-- ************************************************************************************ -->
+    <div class="user-projects js--project-04">
+      <h3 class="js--project-title-04">Conversational Recommender and User Profiling</h3>
+      <div class="images-left js--image-left-04">
+        <img alt="mountains" src="{{ "/assets/img/python_rest.jpg" | prepend: site.baseurl }}" />
+      </div>
+      <div class="contents-right js--content-right-04">
+        <!-- <h3>Conversational Recommender and User Profiling</h3> -->
+        <ul>
+          <li>Web services: REST APIs</li>
+          <li>Python, Flask micro-framework</li>
+        </ul>
+        <p>This is the backend for generating user responses for the VIDURA chatbot. Based on user data collected during active user conversation with chatbot keywords are extracted and passed to underlying recommenders.</p>
+        <!-- <a class="project-link" href="#">Check it out</a> -->
+      </div>
+    </div>
+    <!-- ************************************************************************************ -->
+    <div class="user-projects js--project-05">
+      <h3 class="js--project-title-05">Online multi-player tic-tac-toe game</h3>
+      <div class="images-right js--image-right-05">
+        <img alt="mountains" src="{{ "/assets/img/tic-tac-toe.png" | prepend: site.baseurl }}" />
+      </div>
+      <div class="contents js--content-left-05">
+        <!-- <h3>Online multi-player tic-tac-toe game</h3> -->
+        <ul>
+          <li>HTML, Javascript, JQuery, Bootstrap</li>
+          <li>Socket.IO</li>
+        </ul>
+        <p>Online multi-player tic-tac-toe game developed using Javascript and Socket.IO</p>
+        <a class="project-link" href="https://github.com/acarjungowda/tictactoe">Check it out</a>
+      </div>
+    </div>
+    <!-- ************************************************************************************ -->
+    <div class="user-projects js--project-06">
+      <h3 class="js--project-title-06"> Self-learning evolutionary algorithm in Python to play the game of Checkers </h3>
+      <div class="images-left js--image-left-06">
+        <img alt="mountains" src="{{ "/assets/img/checkers.jpg" | prepend: site.baseurl }}" />
+      </div>
+      <div class="contents-right js--content-right-06">
+        <!-- <h3> Self-learning evolutionary algorithm in Python to play the game of Checkers </h3> -->
+        <ul>
+          <li>Python, NumPy</li>
+          <li>Min-max trees</li>
+        </ul>
+        <p>Evolutionary algorithm to paly game of checkers. Used min-max trees to identify the best possible move. We will determine the successful game playing strategies by having each “player” play each other in a tournament and the “players” with the most amount of wins will be picked to be parents.</p>
+        <a class="project-link" href="https://github.com/acarjungowda/ComputationalIntelligenceFinalProject">Check it out</a>
+      </div>
+    </div>
+    <!-- ************************************************************************************ -->
   </div>
 </div>
-<!-- ************************************************************************************ -->
-<div class="user-projects">
-  <div class="images-left">
-    <img alt="mountains" src="{{ "/assets/img/chat-widget.png" | prepend: site.baseurl }}" />
-  </div>
-  <div class="contents-right">
-    <h3>Javascript emmedable chat widget client for Dialogflow</h3>
-    <ul>
-      <li>Javascript, JQuery, AJAX</li>
-      <li>Gulp, SASS, Bootstrap</li>
-    </ul>
-    <p>Chat widget UI and Dialogflow integration using javascript and jquery. Javascript can be embeded on any HTML page.</p>
-    <a class="project-link" href="https://github.com/acarjungowda/chat-widget">Check it out</a>
-  </div>
-</div>
-<!-- ************************************************************************************ -->
-<div class="user-projects">
-  <div class="images-right">
-    <img alt="mountains" src="{{ "/assets/img/chatbot.png" | prepend: site.baseurl }}" />
-  </div>
-  <div class="contents">
-    <h3> VIDURA: A virtual assistant powered by Dialogflow on <a href="http://cyneuro.org">CyNeuro</a> portal</h3>
-    <ul>
-      <li>PHP Laravel Framework, JQuery and AgularJS</li>
-      <li>Dialogflow</li>
-    </ul>
-    <p>VIDURA, a chabot using Dialogflow to help neuroscience scientist execute workflows on remote HPC systems. Design and maintaining the cyneuro.org portal. REST API end points for generating custom responses using Dialogflow web hooking feature.
-    </p>
-    <!-- <a class="project-link" href="#">Check it out</a> -->
-  </div>
-</div>
-<!-- ************************************************************************************ -->
-<div class="user-projects">
-  <div class="images-left">
-    <img alt="mountains" src="{{ "/assets/img/python_rest.jpg" | prepend: site.baseurl }}" />
-  </div>
-  <div class="contents-right">
-    <h3>Conversational Recommender and User Profiling</h3>
-    <ul>
-      <li>Web services: REST APIs</li>
-      <li>Python, Flask micro-framework</li>
-    </ul>
-    <p>This is the backend for generating user responses for the VIDURA chatbot. Based on user data collected during active user conversation with chatbot keywords are extracted and passed to underlying recommenders.</p>
-    <!-- <a class="project-link" href="#">Check it out</a> -->
-  </div>
-</div>
-<!-- ************************************************************************************ -->
-<div class="user-projects">
-  <div class="images-right">
-    <img alt="mountains" src="{{ "/assets/img/tic-tac-toe.png" | prepend: site.baseurl }}" />
-  </div>
-  <div class="contents">
-    <h3>Online multi-player tic-tac-toe game</h3>
-    <ul>
-      <li>HTML, Javascript, JQuery, Bootstrap</li>
-      <li>Socket.IO</li>
-    </ul>
-    <p>Online multi-player tic-tac-toe game developed using Javascript and Socket.IO</p>
-    <a class="project-link" href="https://github.com/acarjungowda/tictactoe">Check it out</a>
-  </div>
-</div>
-<!-- ************************************************************************************ -->
-<div class="user-projects">
-  <div class="images-left">
-    <img alt="mountains" src="{{ "/assets/img/checkers.jpg" | prepend: site.baseurl }}" />
-  </div>
-  <div class="contents-right">
-    <h3> Self-learning evolutionary algorithm in Python to play the game of Checkers </h3>
-    <ul>
-      <li>Python, NumPy</li>
-      <li>Min-max trees</li>
-    </ul>
-    <p>Evolutionary algorithm to paly game of checkers. Used min-max trees to identify the best possible move. We will determine the successful game playing strategies by having each “player” play each other in a tournament and the “players” with the most amount of wins will be picked to be parents.</p>
-    <a class="project-link" href="https://github.com/acarjungowda/ComputationalIntelligenceFinalProject">Check it out</a>
-  </div>
-</div>
-<!-- ************************************************************************************ -->
-

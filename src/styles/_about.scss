@@ -1,33 +1,32 @@
-#about {
-  width: 90%;
+.user-description {
   margin: 0 auto;
-  max-width: 960px;
+  text-align: center;
+  width: 90%;
+  margin-bottom: 30px;
   @media only screen and (min-width: $cut) {
     width: 80%;
+    margin-bottom: 50px;
   }
 }
 
-.tech {
-  margin: 10px;
-}
-
-.user {
+.user-skills {
   text-align: center;
-  font-size: 60px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
   p {
-    font-size: 16px;
+    font-size: 90%;
   }
   @media only screen and (min-width: $cut) {
     flex-wrap: nowrap;
-    font-size: 75px;
   }
 }
 
-.user-details {
-  text-align: center;
-  margin: 5px auto;
+.tech-box {
+  margin: 0 10px;
+  .icon {
+    font-size: 300%;
+  }
 }
+

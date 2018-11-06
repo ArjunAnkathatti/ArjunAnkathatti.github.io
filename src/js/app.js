@@ -1,5 +1,78 @@
-/* sweetScroll load */
-document.addEventListener("DOMContentLoaded", function () {
+$(document).ready(function() {
+  $('.js--section-projects').waypoint(function(direction) {
+    if (direction == "down") {
+      console.log("waypoint works");
+      // alert("hello waypoint");
+      $('.js--section-projects').addClass('animated swing');
+    }
+  }, {
+      offset: '60px'
+  });
+
+   $('.js--project-01').waypoint(function(direction) {
+    if (direction == "down") {
+      $('.js--image-right-01').addClass('animated fadeInRightBig');
+      $('.js--content-left-01').addClass('animated fadeInLeftBig');
+      $('.js--project-title-01').addClass('animated fadeInDownBig');
+    }
+  }, {
+      offset: '300px'
+  });
+
+   $('.js--project-02').waypoint(function(direction) {
+    if (direction == "down") {
+      $('.js--image-left-02').addClass('animated fadeInLeftBig');
+      $('.js--content-right-02').addClass('animated fadeInRightBig');
+      $('.js--project-title-02').addClass('animated fadeInDownBig');
+    }
+  }, {
+      offset: '300px'
+  });
+
+
+   $('.js--project-03').waypoint(function(direction) {
+    if (direction == "down") {
+      $('.js--image-right-03').addClass('animated fadeInRightBig');
+      $('.js--content-left-03').addClass('animated fadeInLeftBig');
+      $('.js--project-title-03').addClass('animated fadeInDownBig');
+    }
+  }, {
+      offset: '300px'
+  });
+
+   $('.js--project-04').waypoint(function(direction) {
+    if (direction == "down") {
+      $('.js--image-left-04').addClass('animated fadeInLeftBig');
+      $('.js--content-right-04').addClass('animated fadeInRightBig');
+      $('.js--project-title-04').addClass('animated fadeInDownBig');
+    }
+  }, {
+      offset: '300px'
+  });
+
+   $('.js--project-05').waypoint(function(direction) {
+    if (direction == "down") {
+      $('.js--image-right-05').addClass('animated fadeInRightBig');
+      $('.js--content-left-05').addClass('animated fadeInLeftBig');
+      $('.js--project-title-05').addClass('animated fadeInDownBig');
+    }
+  }, {
+      offset: '300px'
+  });
+
+   $('.js--project-06').waypoint(function(direction) {
+    if (direction == "down") {
+      $('.js--image-left-06').addClass('animated fadeInLeftBig');
+      $('.js--content-right-06').addClass('animated fadeInRightBig');
+      $('.js--project-title-06').addClass('animated fadeInDownBig');
+    }
+  }, {
+      offset: '300px'
+  });
+
+
+
+  /* sweetScroll load */
   const sweetScroll = new SweetScroll({/* some options */});
 
   /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
@@ -115,4 +188,4 @@ document.addEventListener("DOMContentLoaded", function () {
     "retina_detect": true
   });
 
-}, false);
+});
