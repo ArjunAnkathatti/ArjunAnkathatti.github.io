@@ -13,6 +13,39 @@ header {
   }
 }
 
+.main-nav {
+  display: none;
+  @media only screen and (min-width: $big-screen) {
+    display:block;
+    width: 100%;
+    position: absolute;
+    list-style: none;
+    margin-top: 40px;
+    text-align: center;
+    li {
+      display: inline-block;
+      margin-right: 40px;
+    }
+  } 
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+ padding: 8px 0 8px 0;
+ color: #fff;
+ text-decoration: none;
+ text-transform: uppercase;
+ border-bottom: 2px solid transparent;
+ -webkit-transition: border-bottom 0.2s;
+ transition: border-bottom 0.2s;
+ font-size: 80%; 
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid $orange;
+}
+
 .header-text-box {
   z-index: 9999;
   text-align: center;
@@ -22,13 +55,17 @@ header {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   .site-title {
-    // font-size: 45px;
     display: block;
     line-height: 1.2;
     color: #FFF;
-    @media only screen and (min-width:$cut){
-      // margin: 0;
-      // font-size: 100px;
+    font-size: 85%;
+    word-spacing: 4px;
+    letter-spacing: 1px;
+    @media only screen and (min-width:$tablet-width) {
+      font-size: 5vh;
+    }
+    @media only screen and (min-width:$big-screen) {
+      font-size: 6.5vh;
     }
   }
   .site-description {
@@ -37,55 +74,21 @@ header {
     display: block;
     line-height: 1;
     color: #FFF;
-    margin-top: 50px;
-    @media only screen and (min-width:$cut){
-      font-size: 200%;
+    margin-top: 40px;
+    @media only screen and (min-width:$tablet-width){
+      margin-top: 60px;
+      font-size: 3vh;
     }
   }
 }
-
-
-.main-nav {
-  width: 100%;
-  position: absolute;
-  list-style: none;
-  margin-top: 40px;
-  text-align: center;
-  li {
-    display: inline-block;
-    margin-right: 40px;
-  }
-}
-
-.main-nav li a:link,
-.main-nav li a:visited {
-  padding: 8px 0 8px 0;
-  color: #fff;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 70%;
-  border-bottom: 2px solid transparent;
-  -webkit-transition: border-bottom 0.2s;
-  transition: border-bottom 0.2s;
-  @media only screen and (min-width:$cut){
-      font-size: 80%;
-  }
-}
-
-.main-nav li a:hover,
-.main-nav li a:active {
-  border-bottom: 2px solid #e67e22;
-}
-
 
 .header-icons {
   display: flex;
   justify-content: center;
   text-align: center;
-  margin-top: 50px;
   .icon {
     color: #FFF;
-    font-size: 40px;
+    font-size: 20px;
     padding: 10px;
     margin-right: 30px;
     border-radius: 50%;
@@ -93,14 +96,15 @@ header {
     transition: all .7s;
     &:hover {
       color: $main;
+      // color: $orange;
       background: #FFF;
     }
     &:active {
       color: $main;
       background: #FFF;
     }
-    @media only screen and (min-width:$cut) {
-      font-size: 35px;
+    @media only screen and (min-width:$tablet-width) {
+      font-size: 30px;
     }
   }
 }
@@ -116,23 +120,23 @@ header {
   font-size: 30px;
   cursor: pointer;
   .icon {
-      position: absolute;
-      -webkit-transform-style: preserve-3d;
-      transform-style: preserve-3d;
-      top: 50%;
-      left: 50%;
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      width: 100px;
-      height: 100px;
-      fill: #fff;
-      -webkit-animation: pulse 1.3s infinite;
-      animation: pulse 1.3s infinite;
-      &:hover {
-        color: $sec;
-      }
-      &:active {
-        color: $sec;
-      }
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    fill: #fff;
+    -webkit-animation: pulse 1.3s infinite;
+    animation: pulse 1.3s infinite;
+    &:hover {
+      color: $sec;
+    }
+    &:active {
+      color: $sec;
+    }
   }
 }
