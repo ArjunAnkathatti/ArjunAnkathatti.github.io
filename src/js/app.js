@@ -1,5 +1,9 @@
 $(document).ready(function() {
 
+  /* ******************************************************
+  /* Header and Navigation
+  /* ******************************************************
+  /* mobile navigation toggle slide */
   $('.js--mobile-nav').slideToggle();
 
   $('.mobile-nav li a').click(function() {
@@ -11,7 +15,7 @@ $(document).ready(function() {
      nav.slideToggle(200);
    });
 
-
+  /* sticky navigation and highlight navigation item based on location on the page*/
   $('.js--section-about').waypoint(function(direction) {
     if (direction == "down") {
       $('nav').addClass('sticky');
@@ -52,6 +56,16 @@ $(document).ready(function() {
   }, {
       offset: '70%'
   });
+
+  $('.skillbar').each(function(){
+    $(this).find('.skillbar-bar').animate({
+      width:$(this).attr('data-percent')
+    },4000);
+  });
+
+  /* ******************************************************
+  /* Header and Navigation
+  /* ******************************************************
 
   //  $('.js--project-01').waypoint(function(direction) {
   //   if (direction == "down") {

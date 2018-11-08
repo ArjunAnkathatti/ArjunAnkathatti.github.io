@@ -17,7 +17,7 @@ html {
 }
 
 .row {
-    max-width: 1024px;
+    max-width: 1040px;
     margin: 0 auto;
 }
 
@@ -32,7 +32,6 @@ article, aside, figcaption, figure, footer, header, nav, section {
 
 h1, h2, h3 {
     font-weight: 300;
-    // text-transform: uppercase;
 }
 h2 {
     font-size: 175%;
@@ -43,6 +42,7 @@ h2 {
 }
 h3 {
     font-size: 140%;
+    margin-top: 20px;
     margin-bottom: 15px;
 }
 h4 {

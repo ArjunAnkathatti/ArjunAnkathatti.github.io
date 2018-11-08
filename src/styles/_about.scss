@@ -1,12 +1,79 @@
-.user-description {
-  margin: 0 auto;
-  text-align: center;
-  width: 90%;
-  margin-bottom: 30px;
-  @media only screen and (min-width: $cut) {
-    width: 80%;
-    margin-bottom: 50px;
+.about-me {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin-top: 80px;
+  @media only screen and (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
+}
+
+.user-img-box {
+  flex: 1;
+  margin: 0 20px;
+  align-content: center;
+  text-align: center;
+  vertical-align: middle;
+  img {
+    display: inline-block;
+    width: 80%;
+    height: auto;
+  }
+  .user-short-desc {
+    padding-top: 30px;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 60px;
+  }
+}
+
+.hexagon-wrap {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+
+.hexagon {
+  background-color: #04C2C9;
+  height: 100%;
+  width: calc(100% * 0.57735);
+  display: inline-block;
+  i {
+    position: absolute;
+    top: 20px;
+    font-size: 34pt;
+    color: #fff;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+}
+
+.hexagon:before {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(60deg);
+}
+
+.hexagon:after {
+  position: absolute;
+  top: 0;
+  right: calc((100% / 2) - ((100% * 0.57735) / 2));
+  background-color: inherit;
+  height: inherit;
+  width: inherit;
+  content: '';
+  transform: rotateZ(-60deg);
 }
 
 .user-skills {
@@ -16,7 +83,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
   p {
-    font-size: 90%;
+    font-size: 16px;
   }
   @media only screen and (min-width: $cut) {
     flex-wrap: nowrap;
@@ -24,9 +91,101 @@
 }
 
 .tech-box {
-  margin: 0 10px;
-  .icon {
-    font-size: 300%;
+  margin: 20px auto;
+  text-align: center;
+}
+
+
+.proficiency {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.skillbar {
+  position:relative;
+  display:block;
+  margin-bottom:15px;
+  width:100%;
+  background:#eee;
+  height:35px;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  -webkit-transition:0.4s linear;
+  -moz-transition:0.4s linear;
+  -ms-transition:0.4s linear;
+  -o-transition:0.4s linear;
+  transition:0.4s linear;
+  -webkit-transition-property:width, background-color;
+  -moz-transition-property:width, background-color;
+  -ms-transition-property:width, background-color;
+  -o-transition-property:width, background-color;
+  transition-property:width, background-color;
+}
+
+.skillbar-title {
+  position:absolute;
+  top:0;
+  left:0;
+  width:110px;
+  font-weight:bold;
+  font-size:13px;
+  color:#ffffff;
+  background:#00A1A7;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:4px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-title span {
+  display:block;
+  background:rgba(0, 0, 0, 0.1);
+  padding:0 20px;
+  height:35px;
+  line-height:35px;
+  -webkit-border-top-left-radius:3px;
+  -webkit-border-bottom-left-radius:3px;
+  -moz-border-radius-topleft:3px;
+  -moz-border-radius-bottomleft:3px;
+  border-top-left-radius:3px;
+  border-bottom-left-radius:3px;
+}
+
+.skillbar-bar {
+  height:35px;
+  width:0px;
+  background:#04C2C9;
+  border-radius:3px;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+}
+
+.skill-bar-percent {
+  position:absolute;
+  right:10px;
+  top:0;
+  font-size:11px;
+  height:35px;
+  line-height:35px;
+  color:#ffffff;
+  color:rgba(0, 0, 0, 0.4);
+}
+
+/************************************/
+
+.user-description {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+  margin-bottom: 30px;
+  font-size: 16px;
+  @media only screen and (min-width: $cut) {
+    width: 80%;
+    margin-bottom: 50px;
   }
 }
+
 
