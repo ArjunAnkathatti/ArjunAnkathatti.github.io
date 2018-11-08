@@ -19,13 +19,14 @@ header {
   position: absolute;
   top: 45%;
   left: 50%;
+  width: 90%;
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   .site-title {
     display: inline-block;
     width: 100%;
     color: #FFF;
-    font-size: 125%;
+    font-size: 130%;
     line-height: 1.2em;
     word-spacing: 2px;
     letter-spacing: 0.5px;
@@ -107,10 +108,14 @@ header {
 }
 
 nav {
-  background-color: #1A232E;
-  height: 50px;
-  width: 100%;
-  border-bottom: 3px solid $maroon;
+  display: none;
+  @media only screen and (min-width: $tablet-width) {
+    display: block;
+    background-color: #1A232E;
+    height: 50px;
+    width: 100%;
+    border-bottom: 3px solid $maroon;
+  }
 }
 
 .sticky {
@@ -118,29 +123,11 @@ nav {
   top: 0;
   left: 0;
   z-index: 9999;
-  width: 100%;
 }
 
-.mobile-nav-icon {
-  width: 100%;
-  display: inline-block;
-  text-align: right;
-  cursor: pointer;
-  position: absolute;
-  @media only screen and (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.mobile-nav-icon i {  
-  cursor: pointer;
-  font-size: 200%;
-  color: #f00;
-  padding: 5px 40px 5px 0;
-}
 
 .main-nav {
-  display: none;
+  // display: none;
   @media only screen and (min-width: $tablet-width) {
     display:block;
     position: absolute;
@@ -155,6 +142,48 @@ nav {
   } 
 }
 
+.row-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 2px 2px $maroon;
+  z-index: 9999;
+  @media only screen and (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.mobile-nav {
+  float: left;
+  list-style: none;
+  margin-top: 10px;
+  margin-left: 25px;
+  li {
+    display: block;
+  }
+  li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    border: 0;
+    padding: 10px 0;
+    font-size: 100%;
+  }
+}
+
+.mobile-nav-icon {
+  float: right;
+  display: inline-block;
+  padding: 10px 20px 10px 0;
+}
+
+.mobile-nav-icon i {
+  font-size: 120%;
+  color: #fff;
+}
+
 .main-nav li a:link,
 .main-nav li a:visited {
  padding: 8px 0 8px 0;
@@ -163,7 +192,7 @@ nav {
  text-transform: uppercase;
  -webkit-transition: color 0.2s;
  transition: color 0.2s;
- font-size: 80%; 
+ font-size: 16px; 
 }
 
 .main-nav li a:hover,

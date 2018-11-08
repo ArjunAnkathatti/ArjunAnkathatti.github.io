@@ -1,5 +1,17 @@
 $(document).ready(function() {
 
+  $('.js--mobile-nav').slideToggle();
+
+  $('.mobile-nav li a').click(function() {
+    $('.js--mobile-nav').slideToggle();    
+  });
+
+   $('.js--nav-icon').click(function() {
+     var nav = $('.js--mobile-nav');
+     nav.slideToggle(200);
+   });
+
+
   $('.js--section-about').waypoint(function(direction) {
     if (direction == "down") {
       $('nav').addClass('sticky');
