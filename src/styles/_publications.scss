@@ -22,81 +22,9 @@
   }
   li {
     color: $main;
-    font-size: 1.1rem;
+    font-size: 100%;
   }
   p {
     margin-right: 5px;
-  }
-}
-
-.poster-contents {
-  @media only screen and (min-width: $cut) {
-    margin-left: 0;
-    width: 78%;
-  }
-}
-
-.poster-contents-right {
-  @media only screen and (min-width: $cut) {
-    float: right;
-    margin-top: -5%;
-    width: 18%;
-  }
-}
-.poster-images-right {
-  @media only screen and (min-width: $cut) {
-    float: right;
-    width: 18%;
-  }
-  img {
-    @media only screen and (min-width: $cut) {
-      float: right;
-    }
-  }
-}
-
-.poster-images-left {
-  @media only screen and (min-width: $cut) {
-    float: left;
-    width: 18%;
-  }
-  img {
-    @media only screen and (min-width: $cut) {
-      float: left;
-    }
-  }
-}
-
-.poster-link {
-  display: block;
-  width: 100px;
-  margin: 10px 0px;
-  padding: 5px;
-  color: $main;
-  background-color: transparent;
-  border: 1px solid $main;
-  border-radius: 10px;
-  text-align: center;
-  outline: none;
-  text-decoration: none;
-  cursor: pointer;
-  transition: color 0.3s ease-out,
-              background-color 0.3s ease-out,
-              border-color 0.3s ease-out;
-  &:hover {
-    background-color: $purple;
-    border-color: $purple;
-    color: #fff;
-    transition: color 0.3s ease-in,
-                background-color 0.3s ease-in,
-                border-color 0.3s ease-in;
-  }
-  &:active {
-    background-color: $purple;
-    border-color: $purple;
-    color: #fff;
-    transition: color 0.3s ease-in,
-                background-color 0.3s ease-in,
-                border-color 0.3s ease-in;
   }
 }

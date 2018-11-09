@@ -1,5 +1,5 @@
 .section-projects {
-  background-color: #f4f4f4;
+  background-color: #f8f8f8;
 }
 
 .projects {
@@ -21,14 +21,15 @@
     border-radius: 5px;
   }
   h3 {
-    margin: 0;
+    // margin: 0;
   }
   li {
     color: $main;
-    font-size: 1.1rem;
+    font-size: 80%;
   }
   p {
     margin-right: 5px;
+    font-size: 100%;
   }
 }
 
@@ -44,7 +45,7 @@
 .contents-right {
   @media only screen and (min-width: $cut) {
     float: right;
-    margin-top: -5%;
+    margin-top: -2%;
     width: 58%;
   }
 }
@@ -75,6 +76,7 @@
 .project-link {
   display: inline-block;
   // width: 100px;
+  font-size: 80%;
   margin: 10px 0px;
   padding: 5px;
   color: $main;
