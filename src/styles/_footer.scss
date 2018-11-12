@@ -1,11 +1,40 @@
 .footer {
   background: $main;
-  padding: 2px 0;
-  margin-top: 100px;
+  padding: 0 0 30px 0;
   text-align: center;
   color: #FFF;
-  border-top: solid 3px #f0b82c;
   font-size: 16px;
+  .svg-footer {
+    margin-bottom: 50px;
+  }
+  input, textarea {
+    width: 40%;
+    margin: 0 auto;
+    border: 0;
+    display: block;
+    outline: none;
+    boder: 0;
+    padding: 10px 15px;
+    background-color: #1E242C;
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  button {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #1E242C;
+    border: 0;
+    color: #fff;
+    transition: background-color 0.2s color 0.2s;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+
   .love {
     color: red;
   }
@@ -21,3 +50,4 @@
     }
   }
 }
+
