@@ -1,0 +1,42 @@
+.section-contact {
+    background: $main;
+  padding: 0 0 30px 0;
+  text-align: center;
+  color: #FFF;
+  font-size: 16px;
+  .svg-contact {
+    margin-bottom: 50px;
+  }
+  input, textarea {
+    width: 40%;
+    margin: 0 auto;
+    border: 0;
+    display: block;
+    outline: none;
+    border: 0;
+    padding: 10px 15px;
+    background-color: lighten(#1E242C, 5%);
+    margin-bottom: 10px;
+    color: #fff;
+  }
+  textarea {
+    height: 100px;
+  }
+  button {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #1E242C;
+    border: 1px solid #e31b6d;
+    color: #fff;
+    transition: background-color 0.2s color 0.2s;
+    &:hover {
+      background-color: #fff;
+      color: #000;
+      border: none;
+      color: #e31b6d;
+    }
+  }
+}

@@ -63,6 +63,23 @@ $(document).ready(function() {
     },4000);
   });
 
+  /* 
+  * Footer contact submit button actions
+  */
+  $("#contact-form").submit(function(e){
+      e.preventDefault();
+      console.log('submit button clicked');
+
+      var name = $("#form-name").val();
+      var email = $("#form-email").val();
+      var message = $("#form-message").val();
+
+      console.log(name + email + message);
+
+
+      $(".form-user-message").text("message").show().fadeOut(4000);
+
+  });
   /* ******************************************************
   /* Header and Navigation
   /* ******************************************************

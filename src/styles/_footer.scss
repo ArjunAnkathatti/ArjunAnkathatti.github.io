@@ -1,53 +1,37 @@
 .footer {
-  background: $main;
-  padding: 0 0 30px 0;
+  background: darken($main, 10%);
+  padding: 30px 0 30px 0;
   text-align: center;
   color: #FFF;
   font-size: 16px;
-  .svg-footer {
-    margin-bottom: 50px;
-  }
-  input, textarea {
-    width: 40%;
+  position: relative;
+  .footer-up {
+    position: absolute;
+    top: -25px;
+    left: 0;
+    right: 0;
     margin: 0 auto;
-    border: 0;
-    display: block;
-    outline: none;
-    boder: 0;
-    padding: 10px 15px;
-    background-color: #1E242C;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-  button {
-    margin-top: 10px;
-    margin-bottom: 30px;
-    width: 120px;
-    height: 40px;
-    line-height: 40px;
-    background-color: #1E242C;
-    border: 0;
-    color: #fff;
-    transition: background-color 0.2s color 0.2s;
-    &:hover {
-      background-color: #fff;
-      color: #000;
+    width: 50px;
+    height: 50px;
+    .icon {
+      width: 50px;
+      height: 50px;
+      background: #e31b6d;
+      font-size: 30px;
+      line-height: 40pt;
+      cursor: pointer;
     }
-  }
-
-  .love {
-    color: red;
   }
   a {
     text-decoration: none;
     margin: 0;
     color: #FFF;
-    &:hover{
-      color: $sec;
-    }
-    &:active {
-      color: $sec;
+  }
+  .footer-content {
+    margin-top: 50px;
+    a:hover {
+      color: #e31b6d;
+      text-decoration: underline;
     }
   }
 }
-
