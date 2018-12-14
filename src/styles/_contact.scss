@@ -7,8 +7,17 @@
   .svg-contact {
     margin-bottom: 50px;
   }
+}
+
+.form-user-message {
+  color: #e31b6d;
+  padding: 10px;
+}
+
+#contact-form {
+  padding-top: 30px;
   input, textarea {
-    width: 40%;
+    width: 80%;
     margin: 0 auto;
     border: 0;
     display: block;
@@ -38,5 +47,16 @@
       border: none;
       color: #e31b6d;
     }
+  }
+}
+
+@media only screen and (min-width: $tablet-width) {
+  #contact-form input, #contact-form textarea {
+    width: 60%;
+  }
+}
+@media only screen and (min-width: $big-screen) {
+  #contact-form input, #contact-form textarea {
+    width: 40%;
   }
 }
