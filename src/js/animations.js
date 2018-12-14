@@ -5,11 +5,11 @@
     offset: '50%'
  });
 
- $().waypoint(function(direction){
+ $('.js--heaxagon-wp').waypoint(function(direction){
     $('.js--userimage-wp').addClass('animated bounceInLeft');
     $('.js--proficiency-wp').addClass('animated bounceInRight');
  },{
-    offset: '50%'
+    offset: '20%'
  });
 
  $('.js--projects-wp').waypoint(function(direction){
