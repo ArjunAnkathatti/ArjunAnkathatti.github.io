@@ -14,7 +14,7 @@ github_username:  acarjungowda
 gplus_username:  lorem_ipsum
 
 # Google-analytics
-google-analytics:
-  id: "UA-125656513-1"
+#google-analytics:
+#  id: "UA-125656513-1"
 
 exclude: ['package.json', 'src' , 'node_modules']
